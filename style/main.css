@@ -1,0 +1,85 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; 
+  }
+  .bg-change{
+    background-color: rgba(0, 0, 0, .25);
+    height: 100%;
+    width: 100%;
+}
+  @font-face {
+    font-family: main;
+    src: url(../font/main-PS2P.ttf);
+    letter-spacing: -0.6%;
+    font-weight: 400;
+  }
+  .font-main{
+    font-family: main;
+  }
+.container-80{
+width: 80%;
+}
+  .bg-color-orange{
+    background-color: rgb(255, 167, 74);
+  }
+  .tex-color-orange{
+    color: #FFA74A;
+  }
+  .no-pad-mar{
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
+  }
+  .logo{
+    height: 100%;
+  }
+  .full-screen{
+    height: 100vh;
+    width: 100vw;
+  }
+  .carousel.carousel-slider .carousel-fixed-item{
+    bottom: unset;
+}
+.carousel{
+    height: 100vh;
+}
+
+.carousel .indicators .indicator-item.active{
+    /* transform: scale(1.5); */
+    background-color: #FFA74A;
+}
+.carousel-item{
+    background-size: cover;
+    background-position: center center;
+}
+.navbar-fixed{
+    position: fixed;
+}
+nav ul li a{
+    color: #0e0e0e;
+}
+
+/* projects */
+#projects{
+    min-height: 100vh;
+    width: 100vw;
+}
+.text-second{
+    color: #0e0e0e;
+}
+.card-project{
+    width: 100vw; 
+    min-height: 50px;
+    background-image: url(../media/comma-bg.png); 
+    background-size: cover;
+    background-color: #ffa74ab9;
+    background-blend-mode: screen;
+}
