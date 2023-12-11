@@ -26,6 +26,7 @@ html{
   }
 .container-80{
 width: 80%;
+margin: auto;
 }
   .bg-color-orange{
     background-color: rgb(255, 167, 74);
@@ -98,4 +99,10 @@ a.no-effect{
 i.fa-brands{
   color: #0e0e0e;
   font-size: 2rem;
+}
+.innerDiv{
+  width: inherit;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }

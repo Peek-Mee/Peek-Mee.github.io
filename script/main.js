@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var sidenav = document.querySelectorAll('.sidenav');
-    var sidenavInit = M.Sidenav.init(sidenav, {});
+    // var sidenav = document.querySelectorAll('.sidenav');
+    // var sidenavInit = M.Sidenav.init(sidenav, {});
 
     var carousel = document.querySelectorAll('.carousel.carousel-slider');
     var initCarousel = M.Carousel.init(carousel,{
@@ -25,6 +25,25 @@ document.addEventListener('DOMContentLoaded', function() {
     el.style.height = (el.offsetWidth * 10 /16) + "px";
     console.log(el.style.height);
   })
+  var followParentHeight = document.querySelectorAll(".follow-prev-h");
+  followParentHeight.forEach(el => {
+    el.style.height = el.previousElementSibling.offsetHeight + "px";
+  })
+
+//   var dynamicContainer = document.querySelectorAll(".container .row.dynamic");
+//   dynamicContainer.forEach(el =>{
+//     let max = 0;
+//     for (let index = 0; index < el.children.length; index++) {
+//         let cel = el.children[index];
+//         if (cel.offsetHeight > max){
+//             max = cel.offsetHeight;
+//         }
+//     }
+//     for (let index = 0; index < el.children.length; index++) {
+//         let cel = el.children[index];
+//         cel.style.height = max + "px";
+//     }
+//   })
   function autoplay(){
     M.Carousel.getInstance(document.querySelector(".carousel.carousel-slider")).next();
   setTimeout(autoplay, 5500);

@@ -14,18 +14,18 @@
   <div class="navbar-fixed z-depth-3">
     <nav class="bg-color-orange" style="height: 5rem;">
       <div class="nav-wrapper container valign-wrapper row">
-          <div class="col s3 valign-wrapper">
-            <a href="https:peekmee.com" class="no-pad-mar">
+          <div class="col m3 s12 valign-wrapper">
+            <a href="https:peekmee.com" class="valign-wrapper" style="margin: 0 auto;">
               <img
                 src="media/sqr_company_logo.png"
                 alt="Peek Mee Logo"
                 class="responsive-img"
-                style="height: 56px; width: 56px;"
+                style="height: 56px; width: 56px; margin: 0 auto;"
               />
             </a>
           </div>
-          <div class="col s8">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+          <div class="col m8 s12 hide-on-med-and-down">
+            <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a> -->
             <ul class="right hide-on-med-and-down">
               <li><a href="#pagepiling">Home</a></li>
               <li><a href="#projects">Projects</a></li>
@@ -36,11 +36,11 @@
       </nav>
   </div>
 
-  <ul class="sidenav" id="mobile-demo">
+  <!-- <ul class="sidenav" id="mobile-demo">
     <li><a href="#pagepiling">Home</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#about">About</a></li>
-  </ul>
+  </ul> -->
   
   <!-- carousel -->
   <div id="pagepiling" class="no-pad-mar">
@@ -65,32 +65,45 @@
     <div class="section"></div>
     <div class="section"></div>
     <h3 class="center ">Projects</h3>
+    <div class="section "></div>
     <div class="section"></div>
-    <div class="section"></div>
-    <div class="row card-project valign-wrapper" >
-        <div class="col s12 m5 " style="height: 80%;">
-          <div class="dynamic-16x9 inside" ></div>
+
+    <!-- Rewrite -->
+    <div class="row">
+      <div class="col s12 card-project" style="padding: 1.5rem 0;">
+        <div class="col s12 m5" style="padding: 1.5rem 0;">
+          <div class="dynamic-16x9 inside"></div>
         </div>
-        <div class="col s12 m6 offset-m1 valign-wrapper">
-          <div class="container-80">
-            <h5 class="center">COMMA</h5>
-            <p class="center">A side-scrolling game telling a story about a dream world where the player must get out by following a mysterious figure.</p>  
+        <div class="col s12 m6 offset-m1 valign-wrapper follow-prev-h" style="padding: 1.5rem 0; ">
+          <div class="container-80 center">
+            <h5>COMMA</h5>
+            <p class="center">A side-scrolling game telling a story about a dream world 
+              where the player must get out by following a mysterious figure.</p>
           </div>
         </div>
+      </div>
     </div>
     <div class="section"></div>
-    <div class="row card-project valign-wrapper" style="background-image: url(media/tlcoaup-bg.png);">
-      <div class="col s12 m5 no-pad-mar" style="height: 80%;">
-        <div class="inside dynamic-16x9" style="background-image: url(media/tlcoaup-promotional-2.png);"></div>
-      </div>
-      <div class="col s12 m6 offset-m1  valign-wrapper">
-        <div class="container-80">
-          <h5 class="center">TLCOAUP</h5>
-          <p class="center">The Life Cycle Of An Unemployed Person is a simulation game where the player acts as a freshly graduate student who is seeking to land his first job.</p>  
+    <div class="row">
+      <div class="col s12 card-project" 
+      style="padding: 1.5rem 0; background-image: url(media/tlcoaup-bg.png);">
+        <div class="col s12 m5" style="padding: 1.5rem 0;">
+          <div class="dynamic-16x9 inside" 
+          style="background-image: url(media/tlcoaup-promotional-2.png);"></div>
+        </div>
+        <div class="col s12 m6 offset-m1 valign-wrapper follow-prev-h" style="padding: 1.5rem 0; ">
+          <div class="container-80 center">
+            <h5>TLCOAUP</h5>
+            <p class="center">The Life Cycle Of An Unemployed Person is a simulation game where the player 
+              acts as a freshly graduate student who is seeking to land his first job.</p>
+          </div>
         </div>
       </div>
     </div>
+    <div class="section"></div>
+    <div class="section"></div>
   </div>
+
   <div id="about" class="font-main">
     <div class="section"></div>
     <div class="section"></div>
@@ -99,7 +112,7 @@
     <div class="section"></div>
     <div class="container">
       <div class="row valign-wrapper">
-        <div class="col m5 s12 container-80 center dynamic-size"
+        <div class="col m5 s12 container-80 center dynamic-size hide-on-med-and-down"
         style="background-image: url(media/logo-orange.png); background-size: contain;
         background-repeat: no-repeat; background-position: center;">
 
@@ -116,7 +129,7 @@
   <footer class="page-footer font-main bg-color-orange text-second" style="padding-bottom: 20px;">
     <div class="container">
       <div class="row no-pad-mar valign-wrapper">
-        <div class="col s12 m3 center">
+        <div class="col s12 m3 center hide-on-med-and-down">
           <a href="https:peekmee.com" style="margin: auto;" >
             <img
               src="media/sqr_company_logo.png"
@@ -126,14 +139,14 @@
             />
           </a>
         </div>
-        <div class="col s12 m6">
+        <div class="col s12 m6 hide-on-med-and-down">
           <div class="center">
             © 2023 Peek Mee
           </div>
         </div>
         <div class="col s12 m3 center">
           <p class="col s12">Follow Us</p>
-          <div class="container">
+          <div class="col s10 offset-s1">
             <a href="https://peek-mee.itch.io/" class="col s4 no-effect">
               <i class="fa-brands fa-itch-io"></i>
             </a>
