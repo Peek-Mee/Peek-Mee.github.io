@@ -77,9 +77,25 @@ nav ul li a{
 }
 .card-project{
     width: 100vw; 
-    min-height: 50px;
+    min-height: 352px;
     background-image: url(../media/comma-bg.png); 
     background-size: cover;
     background-color: #ffa74ab9;
     background-blend-mode: screen;
+}
+.card-project .inside{
+  background-image: url(../media/comma-promotional.png); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  margin: auto ;
+  width: 80%; 
+  border-radius: 15px;
+}
+a.no-effect{
+  text-decoration: none;
+}
+i.fa-brands{
+  color: #0e0e0e;
+  font-size: 2rem;
 }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peek Mee</title>
+  <script src="https://kit.fontawesome.com/0a413525b5.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   <link rel="stylesheet" href="materialize/css/materialize.min.css">
   <link rel="stylesheet" href="style/main.css">
@@ -67,10 +68,8 @@
     <div class="section"></div>
     <div class="section"></div>
     <div class="row card-project valign-wrapper" >
-        <div class="col s12 m5 dynamic-size valign-wrapper">
-          <div class="center" style="background-image: url(media/comma-promotional.png); background-size: cover;
-          background-repeat: no-repeat; background-position: center; padding: 5rem;
-          width: 100%; height: 100%;"></div>
+        <div class="col s12 m5 " style="height: 80%;">
+          <div class="dynamic-16x9 inside" ></div>
         </div>
         <div class="col s12 m6 offset-m1 valign-wrapper">
           <div class="container-80">
@@ -81,10 +80,8 @@
     </div>
     <div class="section"></div>
     <div class="row card-project valign-wrapper" style="background-image: url(media/tlcoaup-bg.png);">
-      <div class="col s12 m5 dynamic-size valign-wrapper">
-        <div class="center" style="background-image: url(media/tlcoaup-promotional-2.png); background-size: cover;
-        background-repeat: no-repeat; background-position: center; padding: 5rem;
-        width: 100%; height: 100%;"></div>
+      <div class="col s12 m5 no-pad-mar" style="height: 80%;">
+        <div class="inside dynamic-16x9" style="background-image: url(media/tlcoaup-promotional-2.png);"></div>
       </div>
       <div class="col s12 m6 offset-m1  valign-wrapper">
         <div class="container-80">
@@ -114,33 +111,46 @@
       </div>
     </div>
     <div class="section"></div>
+    <div class="section"></div>
   </div>
+  <footer class="page-footer font-main bg-color-orange text-second" style="padding-bottom: 20px;">
+    <div class="container">
+      <div class="row no-pad-mar valign-wrapper">
+        <div class="col s12 m3 center">
+          <a href="https:peekmee.com" style="margin: auto;" >
+            <img
+              src="media/sqr_company_logo.png"
+              alt="Peek Mee Logo"
+              class="responsive-img"
+              style="height: 48px; width: 48px;"
+            />
+          </a>
+        </div>
+        <div class="col s12 m6">
+          <div class="center">
+            © 2023 Peek Mee
+          </div>
+        </div>
+        <div class="col s12 m3 center">
+          <p class="col s12">Follow Us</p>
+          <div class="container">
+            <a href="https://peek-mee.itch.io/" class="col s4 no-effect">
+              <i class="fa-brands fa-itch-io"></i>
+            </a>
+            <a href="https://www.instagram.com/peekmeeapp/" class="col s4 no-effect">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/PeekMeeApp" class="col s4 no-effect">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</footer>
 </body>
 <script src="materialize/js/materialize.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var sidenav = document.querySelectorAll('.sidenav');
-    var sidenavInit = M.Sidenav.init(sidenav, {});
+<script src="script/main.js"></script>
 
-    var carousel = document.querySelectorAll('.carousel.carousel-slider');
-    var initCarousel = M.Carousel.init(carousel,{
-        fullWidth   : true,
-        indicators  : true,
-    });
-    autoplay();
-  });
-
-  var dynamic = document.querySelectorAll(".dynamic-size");
-  dynamic.forEach(element => {
-    var sibling = element.nextElementSibling;
-    if (sibling == null) sibling = element.previousElementSibling;
-    if (sibling != null){
-      element.style.height = (sibling.offsetHeight * 1.25) + "px";
-    }
-  });
-  function autoplay(){
-    M.Carousel.getInstance(document.querySelector(".carousel.carousel-slider")).next();
-  setTimeout(autoplay, 5500);
-}
-</script>
 </html>
